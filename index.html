@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="icon" type="images/x-icon" href="./images/zqq.ico">
+
+    </head>
+
+
+
+    <style>
+        img {
+            display: line-block;
+            width: 60%;
+
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #4bc0c9, #c779d0, #feac5e);
+
+        }
+
+        .center {
+            text-align: center;
+            height: 40%;
+        }
+
+        .box {
+            height: 80vh;
+            width: 70%;
+            max-width: 600px;
+            background-color: #fff;
+            background: linear-gradient(135deg, #4bc0c8, #c779d0, #feac5e);
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+                rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            text-align: justify;
+            color: #333;
+            font-size: 17px;
+            line-height: 1.7;
+            letter-spacing: 0.034em;
+            font-family: "思源黑体";
+            overflow-y: scroll;
+        }
+
+        .box::-webkit-scrollbar {
+            display: none;
+            /* Chrome Safari */
+        }
+
+        p {
+            text-indent: 2em;
+            font-style: 20px 宋体;
+            line-height: 20px;
+            margin: 5px
+        }
+
+        span {
+            text-align: center;
+        }
+
+        audio {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    </head>
+
+    <body>
+
+        <div class="box">
+            <p style="text-align:center"><audio src="岑宁儿 - 追光者.mp3" id="dd" controls autoplay="true"></audio></p>
+            <p style="text-align:center">
+                <button onclick="st()">点一下嘛</button>
+                <!-- <button onclick="dt()">停止播放</button> -->
+            </p>
+            <!-- <button onclick="rs()">重置播放</button> -->
+            </p>
+            <span style="text-align:left"><b>沁沁:</b></span>
+            <p><b>人潮汹涌，能在茫茫人海中遇到你，是我此生最大的幸运。</b></p>
+            <p></p>
+            <p>遇见你我才发现喜欢一个人原来是这种感觉，你知不知道我很想和你有美好的未来，我想把我所有的好东西都给你，想每天都和你在一起，想你不开心的时候我可以哄你安慰你，很想打开手机就能看到你的消息，想能和你分享生活里的点点滴滴，那怕是生活中琐碎的小事、普普通通的风景.
+            </p>
+            <p>但男孩子遇到喜欢的女孩会变得胆怯，我害怕被你拒绝，害怕这快乐的时光会稍纵即逝，害怕你成为我生命当中的一位过客。
+            </p>
+            <p>曾经果断的我却在此时显得优柔寡断，<b>我害怕向你表达爱意太少会显得我没诚意，但又怕表达太多会让你感到束缚。</b></p>
+            <p><b>短短这一封信，我写了好久好久。从我拿起键盘准备叙述你的细节开始，我总忍不住走神。真抱歉，情话没写出来，可我实实在在想了你好久。我痛恨文字的无情，它在充满戾气时上那么得刻薄恶毒，但却述说深情时又是如此的苍白无力。我实在不知道该怎样去组织我的语音，无论怎么组织也表达我不出我对你喜欢的万分之一。</b>
+            </p>
+            <p>我试图想用那些漂亮的句子来形容你，但是，不行。我字字推敲翻遍古诗词，翩若惊鸿、婉若游龙、明眸善睐、靥辅承权，这些文字写不出你眼里的星辰、写不出你唇角的春风。你就像那一束光，我就是那追光者，看得见却又触摸不到。
+            </p>
+
+            <p>沁沁，你是非常可爱的人，真应该遇到最好的人，我也真希望我就是。我不想给我的青春留下遗憾，所以想大胆告诉你我喜欢你。</p>
+            <p>&#128541;</p>
+            <p></b></p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p></p>
+            <p><b></b></p>
+            <p>
+            </p>
+            <p style="text-align: center"><a href="./1.html" target="_blank" style="color:red">YES❤&nbsp;&nbsp;</a><a
+                    href="./2.html" target="_blank" style="color:black">No✖&nbsp;&nbsp;</a></p>
+            <p></p>
+
+            <p style="text-align: right"><b>康</b></p>
+
+
+        </div>
+        <script type="text/javascript">
+            function dt() {
+                var dd = document.getElementById("dd")
+                dd.pause()
+            }
+            function st() {
+                var dd = document.getElementById("dd")
+                dd.volume = 0.3;
+                dd.play()
+            }
+            function rs() {
+                var dd = document.getElementById("dd")
+                dd.load()
+            }
+            let myImage = document.querySelector('img');
+
+            myImage.onclick = function () {
+                let mySrc = myImage.getAttribute('src');
+                if (mySrc === 'images/c.jpg') {
+                    myImage.setAttribute('src', 'images/firefox2.jpg');
+                } else {
+                    myImage.setAttribute('src', 'images/c.jpg');
+                }
+            }
+
+        </script>
+    </body>
+
+</html>
